@@ -1,17 +1,76 @@
-.main-page {
-    color: #434455;
-    background-color: #FFFFFF;
-}
-
-.header-logo {
-    color: #2E2F42;
-}
-
-/* лого хедера та заголовки колір #2E2F42; */
-/* другорядний колір #434455;*/
-/* білий текст  #FFFFFF; */
-/* лого хедера #4D5AE5 * /
-/* лого і текст футера #F4F4FD */
+/* основний колір текста #434455;*/
+/* колір текста другої частини лого хедера, навігація та заголовки #2E2F42; */
+/* колір текста героя  #FFFFFF; */
+/* колір першої частини текста лого і кнопки #4D5AE5 * /
+/* колір кнопки при hover та навігації при актів  #404BBF */
+/* колір другої частини лого футера #F4F4FD */
+/* колір текста футера #E7E9FC; */
 /* бекграунд головний  #FFFFFF */
 /* бекграунд другорядний #F4F4FD */
 /* бекграунд темних секцій #2E2F42 */
+
+:root {
+    --primary-text-color:#434455;
+    --title-text-color:#2E2F42;
+    --hero-text-color: #FFFFFF;
+    --footer-text-color: #E7E9FC;
+    --primary-backgraund-color: #FFFFFF;
+    --hero-footer-backgraund-color: #2E2F42;
+    --button-backgraund-color: #4D5AE5;
+    --activ-hover-color: #404BBF;
+    --secondary-backgraund-color: #F4F4FD;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-backgraund-color);
+}
+
+/* Зкинути крапки */
+.list {
+    list-style: none;
+}
+
+/* Стилізаці навігації сайту та заголовків */
+.header-nav a,
+.ttl {
+    color: var(--title-text-color);
+}
+
+/* Хедер */
+
+.addrss a {
+    color: var(--primary-text-color)
+}
+
+.nav:active,
+.email {
+    color: var(--activ-hover-color);
+}
+
+/* Стилізація героя */
+
+.hero {
+    color: var(--hero-text-color);
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+/* Кнопка */
+.btn {
+    color: var(--hero-text-color);
+    background-color: var(--button-backgraund-color);
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--activ-hover-color);
+}
+
+/* Стилізація футера */
+.ftr {
+    color: var(--footer-text-color);
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+.ftr-logo {
+    color: #F4F4FD;
+}
