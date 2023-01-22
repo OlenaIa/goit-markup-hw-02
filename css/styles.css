@@ -19,6 +19,8 @@
     --button-backgraund-color: #4D5AE5;
     --activ-hover-color: #404BBF;
     --secondary-backgraund-color: #F4F4FD;
+    --accent-color: #4D5AE5;
+    --hover-text-color-prtfl: #FFFFFF;
 }
 
 body {
@@ -44,14 +46,16 @@ body {
     text-transform: capitalize;
 }
 
-.values-title.ttl,
-.name.ttl {
+.values-title,
+.name.ttl,
+.card-ttl {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
 
-.values-title.ttl {
+.values-title,
+.card-ttl {
     text-align: left;
 }
 
@@ -64,7 +68,7 @@ body {
 }
 
 .accent {
-    color: var(--button-backgraund-color);
+    color: var(--accent-color);
 }
 
 .header-logo {
@@ -77,19 +81,18 @@ body {
 }
 
 /* Стилізаці навігації сайту */
+
 .header-nav a {
     color: var(--title-text-color);
     text-decoration: none;
 }
 
-.nav {
+.navigation {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
 }
 
-.nav:active,
-.email:active {
+.navigation:active {
     color: var(--activ-hover-color);
 }
 
@@ -98,10 +101,14 @@ body {
 .addrss a {
     color: var(--primary-text-color);
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
     text-decoration: none;
+}
+
+.email:hover,
+.tel:hover,
+.email:focus,
+.tel:focus {
+    color: var(--activ-hover-color);
 }
 
 /* Стилізація героя */
@@ -128,13 +135,14 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
     background-color: var(--activ-hover-color);
 }
 
-/* Картки */
+/* Картки команди з Головної */
 .team p {
     text-align: left;
 }
@@ -145,3 +153,30 @@ body {
     background-color: var(--hero-footer-backgraund-color);
 }
 
+/* Фільтр Портфоліо */
+
+.filter-btn {
+    color: var(--accent-color);
+    background-color: var(--secondary-backgraund-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--hover-text-color-prtfl);
+    background-color: var(--activ-hover-color);
+}
+
+/* Картки з Портфоліо */
+
+.card {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
