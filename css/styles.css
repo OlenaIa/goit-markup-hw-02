@@ -120,8 +120,7 @@ body {
 }
 
 .navigation:hover,
-.navigation:focus,
-.navigation:active {
+.navigation:focus {
     color: var(--activ-hover-color);
 }
 
