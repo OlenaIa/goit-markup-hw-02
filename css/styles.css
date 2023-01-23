@@ -20,6 +20,7 @@
     --activ-hover-color: #404BBF;
     --secondary-backgraund-color: #F4F4FD;
     --accent-color: #4D5AE5;
+    --logo-footer-second-part: #F4F4FD;
     --hover-text-color-prtfl: #FFFFFF;
 }
 
@@ -40,10 +41,32 @@ body {
 /*  Заголовки */
 .ttl {
     color: var(--title-text-color);
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
     text-transform: capitalize;
+}
+
+.hidden-ttl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+.hero-title {
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: capitalize;
+}
+
+.small {
+    text-transform: none;
 }
 
 .values-title,
@@ -54,9 +77,12 @@ body {
     line-height: 1.2;
 }
 
-.values-title,
-.card-ttl {
-    text-align: left;
+.services-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
 }
 
 /* Логотип */
@@ -65,6 +91,7 @@ body {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-decoration: none;
+    text-transform:uppercase;
 }
 
 .accent {
@@ -77,7 +104,7 @@ body {
 
 .ftr-logo {
     line-height: 1.17;
-    color: #F4F4FD;
+    color: var(--logo-footer-second-part);
 }
 
 /* Стилізаці навігації сайту */
@@ -92,6 +119,8 @@ body {
     font-size: 16px;
 }
 
+.navigation:hover,
+.navigation:focus,
 .navigation:active {
     color: var(--activ-hover-color);
 }
@@ -118,22 +147,14 @@ body {
     background-color: var(--hero-footer-backgraund-color);
 }
 
-.hero-title {
-
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-}
-
 /* Кнопка */
 .btn {
     color: var(--hero-text-color);
     background-color: var(--button-backgraund-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -143,8 +164,13 @@ body {
 }
 
 /* Картки команди з Головної */
+.team {
+    background-color: var(--secondary-backgraund-color);
+}
+
+.name.ttl,
 .team p {
-    text-align: left;
+    text-align: center;
 }
 
 /* Стилізація футера */
@@ -153,17 +179,15 @@ body {
     background-color: var(--hero-footer-backgraund-color);
 }
 
-/* Фільтр Портфоліо */
+/* Портфоліо */
 
 .filter-btn {
     color: var(--accent-color);
     background-color: var(--secondary-backgraund-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -173,8 +197,6 @@ body {
     color: var(--hover-text-color-prtfl);
     background-color: var(--activ-hover-color);
 }
-
-/* Картки з Портфоліо */
 
 .card {
     text-decoration: none;
