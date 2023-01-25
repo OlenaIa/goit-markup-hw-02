@@ -22,12 +22,14 @@
     --accent-color: #4D5AE5;
     --logo-footer-second-part: #F4F4FD;
     --hover-text-color-prtfl: #FFFFFF;
+    --main-text-font: 'Roboto', sans-serif;
+    --logo-text-font: 'Raleway', sans-serif;
 }
 
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-backgraund-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-text-font);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -87,7 +89,7 @@ body {
 
 /* Логотип */
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--logo-text-font);
     font-size: 18px;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -107,7 +109,7 @@ body {
     color: var(--logo-footer-second-part);
 }
 
-/* Стилізаці навігації сайту */
+/* Навігація сайту */
 
 .header-nav a {
     color: var(--title-text-color);
@@ -120,7 +122,8 @@ body {
 }
 
 .navigation:hover,
-.navigation:focus {
+.navigation:focus,
+.navigation.current {
     color: var(--activ-hover-color);
 }
 
@@ -150,10 +153,10 @@ body {
 .btn {
     color: var(--hero-text-color);
     background-color: var(--button-backgraund-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: inherit;
+    line-height: inherit;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -183,10 +186,10 @@ body {
 .filter-btn {
     color: var(--accent-color);
     background-color: var(--secondary-backgraund-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: inherit;
+    line-height: inherit;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
